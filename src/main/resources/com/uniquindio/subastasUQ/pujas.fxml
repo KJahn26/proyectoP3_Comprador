@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPrincipal" prefHeight="588.0" prefWidth="908.0" stylesheets="@../../../Decoration/pujas.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uniquindio.subastasUQ.controller.view.PujasController">
+   <children>
+      <AnchorPane fx:id="AnchorProductos" layoutX="14.0" layoutY="58.0" prefHeight="217.0" prefWidth="702.0" stylesheets="@../../../Decoration/pujas.css">
+         <children>
+            <TableView fx:id="tableProductos" layoutX="-2.0" prefHeight="200.0" prefWidth="547.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="columnNumeralAnuncio" prefWidth="23.0" text="#" />
+                <TableColumn fx:id="columnNombreAnuncio" text="Nombre" />
+                  <TableColumn fx:id="columnTipoProductoAnuncio" prefWidth="118.0" text="T.Producto" />
+                  <TableColumn fx:id="columnDescripcionAnuncio" prefWidth="85.0" text="Descripción" />
+                  <TableColumn fx:id="columnNameAnuncianteAnuncio" prefWidth="103.0" text="N.Anunciante" />
+                  <TableColumn fx:id="columnFechaInicioAnuncio" prefWidth="70.0" text="F.Inicio" />
+                  <TableColumn fx:id="columnFechaFinalAnuncio" prefWidth="92.0" text="F.Final" />
+                  <TableColumn fx:id="columnValorProductoAnuncio" prefWidth="128.0" text="V.producto" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AnchorPuja" layoutX="20.0" layoutY="328.0" prefHeight="246.0" prefWidth="702.0" stylesheets="@../../../Decoration/pujas.css">
+         <children>
+            <TableView fx:id="tablePujas" layoutX="2.0" layoutY="2.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+              <columns>
+                <TableColumn fx:id="columnNumeralPuja" prefWidth="23.0" text="#" />
+                <TableColumn fx:id="nombre" prefWidth="60.0" text="Nombre" />
+                  <TableColumn fx:id="columnNombreComprador" prefWidth="93.0" text="Comprador" />
+                  <TableColumn fx:id="columnNombreProducto" prefWidth="139.0" text="Producto" />
+                  <TableColumn fx:id="columnNombreAnuncinatePuja" prefWidth="85.0" text="N. Anunciante" />
+                  <TableColumn fx:id="columnFechaInicioPuja" prefWidth="88.0" text="F.inicio" />
+                  <TableColumn fx:id="columnFechaFInalPuja" prefWidth="73.0" text="F.Final" />
+                  <TableColumn fx:id="columValorProductoPuja" prefWidth="134.0" text="Puja Realizada" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnPujas" layoutX="780.0" layoutY="186.0" mnemonicParsing="false" onAction="#ActionPujar" stylesheets="@../../../Decoration/pujas.css" text="Pujar" />
+      <Button fx:id="btnEliminarPuja" layoutX="771.0" layoutY="537.0" mnemonicParsing="false" onAction="#actionEliminarPuja" stylesheets="@../../../Decoration/pujas.css" text="Eliminar puja" />
+      <Text layoutX="755.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor para la puja" />
+      <TextField fx:id="txtxValorPuja" layoutX="741.0" layoutY="154.0" prefHeight="25.0" prefWidth="122.0" />
+      <Button fx:id="btnRegresar" layoutX="838.0" layoutY="14.0" mnemonicParsing="false" onAction="#ActionRegresar" text="Regresar" />
+   </children>
+</AnchorPane>

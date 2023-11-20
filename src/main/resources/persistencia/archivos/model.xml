@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="20.0.2" class="java.beans.XMLDecoder">
+ <object class="com.uniquindio.subastasUQ.model.SubastaUq" id="SubastaUq0">
+  <void property="listaAnuncios">
+   <void method="add">
+    <object class="com.uniquindio.subastasUQ.model.Anuncio">
+     <void property="cedulaAnunciante">
+      <string>1096006075</string>
+     </void>
+     <void property="codigo">
+      <string>4581</string>
+     </void>
+     <void property="descripcion">
+      <string>veomv</string>
+     </void>
+     <void property="fechaFIn">
+      <string>2023-11-22</string>
+     </void>
+     <void property="fechaInicio">
+      <string>2023 - 11 - 20 hora  9:50:13 AM</string>
+     </void>
+     <void property="rutaImagen">
+      <string>src\main\resources\Imagenes\datos.pdf.jpg</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="listaUsuarios">
+   <void method="add">
+    <object class="com.uniquindio.subastasUQ.model.Usuario">
+     <void property="cedula">
+      <string>1120839058</string>
+     </void>
+     <void property="confirmacioncontrasena">
+      <string>megustas</string>
+     </void>
+     <void property="contrasena">
+      <string>megustas</string>
+     </void>
+     <void property="direccion">
+      <string>peatonal UQ</string>
+     </void>
+     <void property="email">
+      <string>jeank.mendezc@uqvirtual.edu.co</string>
+     </void>
+     <void property="nombre">
+      <string>Jean</string>
+     </void>
+     <void property="telefono">
+      <string>3223936041</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.uniquindio.subastasUQ.model.Usuario">
+     <void property="cedula">
+      <string>1096431233</string>
+     </void>
+     <void property="confirmacioncontrasena">
+      <string>boluda</string>
+     </void>
+     <void property="contrasena">
+      <string>boluda</string>
+     </void>
+     <void property="direccion">
+      <string>tebaida</string>
+     </void>
+     <void property="email">
+      <string>jahnc.martinezv@uqvirtual.edu.co</string>
+     </void>
+     <void property="nombre">
+      <string>Jahn</string>
+     </void>
+     <void property="telefono">
+      <string>3112349876</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.uniquindio.subastasUQ.model.Usuario">
+     <void property="cedula">
+      <string>7237493274</string>
+     </void>
+     <void property="confirmacioncontrasena">
+      <string>contraseña</string>
+     </void>
+     <void property="contrasena">
+      <string>contraseña</string>
+     </void>
+     <void property="direccion">
+      <string>noseasapo</string>
+     </void>
+     <void property="email">
+      <string>lalalala@uqvirtual.edu.co</string>
+     </void>
+     <void property="nombre">
+      <string>sota</string>
+     </void>
+     <void property="telefono">
+      <string>3675728747</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="listaproductos">
+   <void method="add">
+    <object class="com.uniquindio.subastasUQ.model.Producto">
+     <void property="anunciante">
+      <string>carlos</string>
+     </void>
+     <void property="descProducto">
+      <string>4x4 bien agresivo</string>
+     </void>
+     <void property="nombreProducto">
+      <string>auto</string>
+     </void>
+     <void property="tipoProducto">
+      <string>vehiculo</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.uniquindio.subastasUQ.model.Producto">
+     <void property="anunciante">
+      <string>laura</string>
+     </void>
+     <void property="descProducto">
+      <string>juguete del canal del raton</string>
+     </void>
+     <void property="fechaTerminarPublicacion">
+      <string>2023-11-04</string>
+     </void>
+     <void property="nombreProducto">
+      <string>rayo mcqueen</string>
+     </void>
+     <void property="tipoProducto">
+      <string>juguete</string>
+     </void>
+     <void property="valorInicial">
+      <string>10</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.uniquindio.subastasUQ.model.Producto">
+     <void property="anunciante">
+      <string>sota</string>
+     </void>
+     <void property="cedulaAnunciante">
+      <string>7237493274</string>
+     </void>
+     <void property="descProducto">
+      <string>aja</string>
+     </void>
+     <void property="fechaTerminarPublicacion">
+      <string>2023-11-05</string>
+     </void>
+     <void property="nombreProducto">
+      <string>prueba</string>
+     </void>
+     <void property="tipoProducto">
+      <string>algo</string>
+     </void>
+     <void property="valorInicial">
+      <string>10</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.uniquindio.subastasUQ.model.Producto">
+     <void property="anunciante">
+      <string>sota</string>
+     </void>
+     <void property="cedulaAnunciante">
+      <string>7237493274</string>
+     </void>
+     <void property="descProducto">
+      <string>veomv</string>
+     </void>
+     <void property="fechaPublicacion">
+      <string>2023 - 11 - 20 hora  9:50:13 AM</string>
+     </void>
+     <void property="fechaTerminarPublicacion">
+      <string>2023-11-22</string>
+     </void>
+     <void property="nombreProducto">
+      <string>jbvj</string>
+     </void>
+     <void property="tipoProducto">
+      <string>Bien raiz</string>
+     </void>
+     <void property="valorInicial">
+      <string>14</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

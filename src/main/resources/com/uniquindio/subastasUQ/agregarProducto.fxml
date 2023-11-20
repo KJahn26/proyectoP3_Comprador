@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorAbajo" prefHeight="592.0" prefWidth="1057.0" stylesheets="@../../../Decoration/AgregarProductos.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uniquindio.subastasUQ.controller.view.controllerAgregarProducto">
+   <children>
+      <HBox fx:id="hboxSuperior" layoutX="-5.0" layoutY="-1.0" prefHeight="37.0" prefWidth="787.0" stylesheets="@../../../Decoration/AgregarProductos.css" />
+      <HBox fx:id="hboxtextInferior" layoutX="211.0" layoutY="231.0" prefHeight="28.0" prefWidth="284.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Datos adicinales producto" wrappingWidth="342.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxImage" layoutX="403.0" layoutY="280.0" prefHeight="212.0" prefWidth="301.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <ImageView fx:id="miImageview" fitHeight="200.0" fitWidth="290.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" top="5.0" />
+               </HBox.margin></ImageView>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxAgregarImagen" layoutX="475.0" layoutY="516.0" prefHeight="37.0" prefWidth="156.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <Button fx:id="btnAgregarImagen" mnemonicParsing="false" onAction="#ActionAgregarImagen" prefHeight="27.0" prefWidth="143.0" stylesheets="@../../../Decoration/AgregarProductos.css" text="Agregar imagen">
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxTipoProducto" layoutX="20.0" layoutY="513.0" prefHeight="28.0" prefWidth="175.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <ComboBox fx:id="comboBoxTipoProducto" prefHeight="25.0" prefWidth="164.0" promptText="Tipo producto" stylesheets="@../../../Decoration/AgregarProductos.css" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox fx:id="hboxRegresar" layoutX="3.0" layoutY="3.0" prefHeight="40.0" prefWidth="1057.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Agregar productos" wrappingWidth="357.732421875">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="350.0" right="10.0" />
+               </HBox.margin>
+            </Text>
+            <Button fx:id="btnRegresar" mnemonicParsing="false" onAction="#ActionRegresar" text="Regresar">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="250.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxFechaTerminaPublicacion" layoutX="20.0" layoutY="386.0" prefHeight="43.0" prefWidth="327.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha termina publicación">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Text>
+            <DatePicker fx:id="dickerFechaTerminaPublicacion" prefHeight="25.0" prefWidth="175.0" promptText="Fecha termina publicación" stylesheets="@../../../Decoration/AgregarProductos.css">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </HBox.margin></DatePicker>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxValorInicial" layoutX="20.0" layoutY="445.0" prefHeight="37.0" prefWidth="290.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Valor inicial producto" />
+            <TextField fx:id="txtValorInicial" prefHeight="25.0" prefWidth="175.0" promptText="Valor inicial">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxNombreProducto" layoutX="20.0" layoutY="75.0" prefHeight="37.0" prefWidth="440.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de prodcuto">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="txtNombreProducto" prefHeight="25.0" prefWidth="232.0" promptText="Nombre del producto" stylesheets="@../../../Decoration/AgregarProductos.css">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxDescripcionProducto" layoutX="14.0" layoutY="119.0" prefHeight="86.0" prefWidth="1012.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción producto">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="txtDescripcionProducto" prefHeight="73.0" prefWidth="889.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxFechapublicacion" layoutX="789.0" layoutY="284.0" prefHeight="25.0" prefWidth="127.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha publicación" wrappingWidth="188.494140625">
+               <HBox.margin>
+                  <Insets left="20.0" right="10.0" top="5.0" />
+               </HBox.margin></Text>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox fx:id="hboxFechaPublicacion" layoutX="782.0" layoutY="326.0" prefHeight="40.0" prefWidth="232.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <TextField fx:id="txtFechaPublicación" prefHeight="25.0" prefWidth="236.0" stylesheets="@../../../Decoration/AgregarProductos.css" />
+         </children>
+      </HBox>
+      <HBox fx:id="hboxPublicarProducto" layoutX="956.0" layoutY="538.0" prefHeight="29.0" prefWidth="70.0" stylesheets="@../../../Decoration/AgregarProductos.css">
+         <children>
+            <Button fx:id="btnPublicarProducto" mnemonicParsing="false" onAction="#ActionPublicarProducto" stylesheets="@../../../Decoration/AgregarProductos.css" text="Publicar">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

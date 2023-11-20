@@ -1,0 +1,51 @@
+#btnInicioSesion
+{
+
+    -fx-background-color: #0090ff;
+    -fx-text-fill: BLACK;
+   -fx-border-color: transparent;
+}
+#btnInicioSesion:hover
+{
+    -fx-background-color: #34ebe5;
+    -fx-cursor: HAND;
+}
+
+#ImagenFondo
+{
+    -fx-background-color: #0090ff
+}
+#Image
+{
+
+    -fx-background-color:  #0090ff 100%;
+    background-size: cover; /* Cubrir completamente el espacio */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    width: 100%;
+    height: 12px; /* Altura deseada */
+}
+#imageView
+{
+    -fx-background-image: url("Usuario.jpg");
+    -fx-opacity: 40%;
+    background-size: cover; /* Cubrir completamente el espacio */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    width: 100%;
+    height: 12px; /* Altura deseada */
+}
+#Principal
+{
+    -fx-background-color: floralwhite;
+}
+
+
+
+
+
+
+
+
+
+

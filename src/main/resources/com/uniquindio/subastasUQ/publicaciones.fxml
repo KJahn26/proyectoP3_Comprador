@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" prefHeight="580.0" prefWidth="830.0" stylesheets="@../../../Decoration/publicaciones.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uniquindio.subastasUQ.controller.view.controllerPublicaciones">
+   <children>
+      <HBox fx:id="hboxtable" layoutX="293.0" layoutY="94.0" prefHeight="313.0" prefWidth="576.0">
+         <children>
+            <TableView fx:id="tablePublicaciones" prefHeight="310.0" prefWidth="576.0" stylesheets="@../../../Decoration/publicaciones.css">
+              <columns>
+                <TableColumn fx:id="columnId" minWidth="0.0" prefWidth="23.0" text="#" />
+                <TableColumn fx:id="columnNombre" prefWidth="66.0" text="Nombre" />
+                  <TableColumn fx:id="columnTipoProducto" prefWidth="76.0" text="T.Producto" />
+                  <TableColumn fx:id="columnDescripcion" prefWidth="85.0" text="Descripcion" />
+                  <TableColumn fx:id="columnNombreAnunciante" prefWidth="97.0" text="N.Anunciante" />
+                  <TableColumn fx:id="ColumnFechaInicio" prefWidth="76.0" text="F.Inicio" />
+                  <TableColumn fx:id="ColumnFechaFInal" prefWidth="76.0" text="F.Final" />
+                  <TableColumn fx:id="COlumnValorProducto" prefWidth="73.0" text="V.producto" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox prefHeight="42.0" prefWidth="953.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Productos publicados">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="350.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxNombreProducto" layoutX="14.0" layoutY="94.0" prefHeight="37.0" prefWidth="277.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <Label prefHeight="24.0" prefWidth="106.0" text="Nombre producto" />
+            <TextField fx:id="txtNombreProducto" stylesheets="@../../../Decoration/publicaciones.css" />
+         </children>
+      </HBox>
+      <HBox fx:id="hboxTipoProducto" layoutX="36.0" layoutY="140.0" prefHeight="25.0" prefWidth="248.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <Label text="Tipo producto">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtTipoProducto" stylesheets="@../../../Decoration/publicaciones.css">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxNombreAnunciante" layoutX="14.0" layoutY="186.0" prefHeight="25.0" prefWidth="277.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre anunciante">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="txtNombreAnunciante" stylesheets="@../../../Decoration/publicaciones.css">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxFechaInicio" layoutX="23.0" layoutY="238.0" prefHeight="25.0" prefWidth="258.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha inicio">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="txtFechaInicio" stylesheets="@../../../Decoration/publicaciones.css">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxFechFInal" layoutX="28.0" layoutY="278.0" prefHeight="25.0" prefWidth="248.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha final">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="txtFechaFinal" stylesheets="@../../../Decoration/publicaciones.css">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxValorProducto" layoutX="19.0" layoutY="315.0" prefHeight="25.0" prefWidth="267.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Valor producto">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="txtValorProducto" stylesheets="@../../../Decoration/publicaciones.css">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxImagenProducto" layoutX="373.0" layoutY="430.0" prefHeight="113.0" prefWidth="233.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <ImageView fx:id="imageviewProducto" fitHeight="128.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="hboxEliminar" layoutX="22.0" layoutY="532.0" prefHeight="25.0" prefWidth="130.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#ActionEliminar" prefHeight="25.0" prefWidth="132.0" stylesheets="@../../../Decoration/publicaciones.css" text="Eliminar" />
+         </children>
+      </HBox>
+      <HBox fx:id="hboxActuzalizar" layoutX="176.0" layoutY="532.0" prefHeight="25.0" prefWidth="142.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <Button fx:id="btnActualizar" mnemonicParsing="false" onAction="#ActionActualizar" prefHeight="25.0" prefWidth="140.0" stylesheets="@../../../Decoration/publicaciones.css" text="Actualizar" />
+         </children>
+      </HBox>
+      <HBox fx:id="hboxDescripcionProducto" layoutX="115.0" layoutY="357.0" prefHeight="142.0" prefWidth="161.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <TextField fx:id="txtDescripcion" prefHeight="140.0" prefWidth="163.0" stylesheets="@../../../Decoration/publicaciones.css" />
+         </children>
+      </HBox>
+      <HBox layoutX="15.0" layoutY="357.0" prefHeight="24.0" prefWidth="106.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción" />
+         </children>
+      </HBox>
+      <HBox fx:id="hboxImagenProducto1" layoutX="659.0" layoutY="457.0" prefHeight="42.0" prefWidth="113.0" stylesheets="@../../../Decoration/publicaciones.css">
+         <children>
+            <Button fx:id="btnPujas" mnemonicParsing="false" onAction="#actionMostrarPujas" prefHeight="29.0" prefWidth="113.0" text="Ver Pujas" />
+         </children>
+      </HBox>
+      <HBox fx:id="hboxImagenProducto11" layoutX="659.0" layoutY="499.0" prefHeight="42.0" prefWidth="113.0" stylesheets="@../../../Decoration/publicaciones.css" />
+   </children>
+   <opaqueInsets>
+      <Insets left="80.0" />
+   </opaqueInsets>
+</AnchorPane>

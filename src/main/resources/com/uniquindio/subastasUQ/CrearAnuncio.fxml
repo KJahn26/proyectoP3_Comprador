@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uniquindio.subastasUQ.controller.view.CrearAnuncioController">
+   <children>
+      <Label layoutX="178.0" layoutY="38.0" text="Publicación de anuncio" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="119.0" text="nombre:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="149.0" text="tipo de producto:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="180.0" prefHeight="20.0" prefWidth="160.0" text="descripcion del producto:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="219.0" prefHeight="20.0" prefWidth="80.0" text="Cargar foto :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="362.0" layoutY="119.0" prefHeight="20.0" prefWidth="80.0" text="Valor inicial :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="149.0" prefHeight="20.0" prefWidth="74.0" text="Fecha final :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtnombreProducto" layoutX="187.0" layoutY="117.0" />
+      <TextField fx:id="txttipoProducto" layoutX="187.0" layoutY="147.0" />
+      <TextField fx:id="txtdescripcionProducto" layoutX="187.0" layoutY="178.0" />
+      <TextField fx:id="txtValorInicial" layoutX="451.0" layoutY="117.0" prefHeight="25.0" prefWidth="136.0" />
+      <TextField fx:id="txtfechaFinal" layoutX="451.0" layoutY="147.0" prefHeight="25.0" prefWidth="136.0" />
+      <Button fx:id="BtnPublicarProducto" layoutX="432.0" layoutY="316.0" mnemonicParsing="false" onAction="#publicarProductoAction" prefHeight="35.0" prefWidth="128.0" text="Publicar Producto" />
+   </children>
+</AnchorPane>
